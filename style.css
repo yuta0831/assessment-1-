@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 3vh;
+    font-weight: normal;
+    color: black;
+}
+
+h1 {
+    font-size: 5vh;
+    font-weight: bold;
+    color: darkblue;
+    text-align: center;
+}
+
+h2 {
+    font-size: 4vh;
+    font-weight: bold;
+    color: darkblue;
+    padding-left: 1vw;
+    padding-top: 2vw;
+}
+
+p {
+    padding-left: 2vw;
+    padding-top: 1vw;
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+figure footer {
+    font-size: 1vh;
+}
+
+figure figcaption {
+    font-size: 2vh;
+}
+
+figure img {
+    width: 20vw;
+}
+
+aside {
+    flex: 20vw;
+}
+main{
+    flex: 80vw;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media print {
+    header,
+    main {
+        display: block;
+    }
+    nav, 
+    aside{
+        display: none;
+    }
+}
