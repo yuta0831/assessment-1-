@@ -77,7 +77,7 @@ table {
 }
 
 th {
-    background-color: darkblue;
+    background-color: rgb(2, 2, 158);
     color: white;
     padding: 1vh;
     text-align: left;
@@ -94,6 +94,12 @@ tr:nth-child(even) {
 
 tr:hover {
     background-color: lightblue;
+}
+
+ul {
+    list-style-type: none;
+    padding: 4vw;
+    margin: 0;
 }
 
 @media print {
