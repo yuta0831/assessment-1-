@@ -56,13 +56,13 @@ nav {
 }
 
 aside {
-    flex: 20vw;
+    flex: 20;
 
 }
 
 
 main {
-    flex: 80vw;
+    flex: 80;
 
 }
 
