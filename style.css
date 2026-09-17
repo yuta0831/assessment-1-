@@ -55,7 +55,14 @@ nav {
     height: 15vh;
     padding-left: 15vw;
 }
-nav a {
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav li {
     margin-right: 2vw;
 }
 
