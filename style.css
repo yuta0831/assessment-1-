@@ -44,6 +44,11 @@ figure figcaption {
 figure img {
     width: 20vw;
 }
+video {
+    width: 15vw;
+    height: 240px;
+    
+}
 
 header {
     flex: 100vw;
