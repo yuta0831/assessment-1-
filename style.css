@@ -118,6 +118,11 @@ ul {
     margin: 0;
 }
 
+video {
+    border-radius: 20px;
+    opacity: 0.5;
+}
+
 @media print {
 
     header,
