@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        main {
+            flex: 100vw;
+        }
+    </style>
+
+    <title>Mining Companies</title>
+</head>
+
+<body>
+    <header>
+        <h1>Mining Companies</h1>
+    </header>
+
+    <nav>
+        <ul>
+
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="companies.htm">Companies</a></li>
+            <li><a href="minerals.htm">Minerals</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+            <li><a href="equipment.htm">Equipment</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2>Major Mining Companies in Western Australia</h2>
+
+        <table>
+            <tr>
+                <th>Company Name</th>
+                <th>Current CEO</th>
+                <th>Link to Company Webpage</th>
+
+            </tr>
+
+            <tr>
+                <td><a href="comp001.htm" target=“currcompany”>BHP</a></td>
+                <td>Brandon Craig</td>
+                <td><a href="https://www.bhp.com/" target="_blank">BHP</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="comp002.htm" target=“currcompany”>Rio Tinto</a></td>
+                <td>Simon Trott</td>
+                <td><a href="https://www.riotinto.com/" target="_blank">Rio Tinto</a></td>
+            </tr>
+
+            <tr>
+                <td><a href="comp003.htm" target=“currcompany”>Fortescue</a></td>
+                <td>Dino Otranto</td>
+                <td><a href="https://www.fortescue.com/" target="_blank">Fortescue</a></td>
+            </tr>
+
+            <tr>
+                <td>Northern Star Resources</td>
+                <td>Ryan Gurner </td>
+                <td><a href="https://www.nsrltd.com/" target="_blank">Northern tar Resources</a></td>
+            </tr>
+
+            <tr>
+                <td>Mineral Resources</td>
+                <td>Chris Ellison</td>
+                <td><a href="https://www.mineralresources.com.au/" target="_bla k">Mineral Resources</a></td>
+            </tr>
+
+            <tr>
+                <td>South32</td>
+                <td>Matthew Daley</td>
+                <td><a href="https://www.south32.net/" target="_blank">South32</a></td>
+            </tr>
+
+            <tr>
+                <td>Pilbara Minerals</td>
+                <td>Dale Henderson</td>
+                <td><a href="https://www.pilbaraminerals.com.au/" target="_blank">Pilbara Minerals</a></td>
+            </tr>
+
+            <tr>
+                <td>IGO Limited</td>
+                <td>Ivan Vella</td>
+                <td><a href="https://www.igo.com.au/" target="_blank">IGO Limited</a></td>
+            </tr>
+
+            <tr>
+                <td>Gold Fields</td>
+                <td>Mike Fraser</td>
+                <td><a href="https://www.goldfields.com/" target="_blank">Gold Fields</a></td>
+            </tr>
+
+            <tr>
+                <td>Roy Hill</td>
+                <td>Gerhard Veldsman</td>
+                <td><a href="https://www.royhill.com.au/" target="_blank">Roy Hill</a></td>
+            </tr>
+        </table>
+
+        <h5>Contact Form</h5>
+
+        <form action="/additem.php" method="post">
+            <label for="requestor">Name:</label><br>
+            <input type="text" id="requestor" name="requestor"><br>
+            <label for="email">E-mail:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="phone">Phone:</label><br>
+            <input type="text" id="phone" name="phone"><br>
+
+            <label for="information">Choose a information type:</label>
+            <select name="information" id="information">
+                <option value="company">Company</option>
+                <option value="mineral">Mineral</option>
+                <option value="feedback">Equipment</option>
+            </select>
+            <br><br>
+
+
+            <input type="submit" value="Submit">
+        </form>
+
+
+    </main>
+
+</body>
+
+</html>
