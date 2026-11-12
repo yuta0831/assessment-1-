@@ -65,13 +65,13 @@
             <tr>
                 <td>Northern Star Resources</td>
                 <td>Ryan Gurner </td>
-                <td><a href="https://www.nsrltd.com/" target="_blank">Northern tar Resources</a></td>
+                <td><a href="https://www.nsrltd.com/" target="_blank">Northern Star Resources</a></td>
             </tr>
 
             <tr>
                 <td>Mineral Resources</td>
                 <td>Chris Ellison</td>
-                <td><a href="https://www.mineralresources.com.au/" target="_bla k">Mineral Resources</a></td>
+                <td><a href="https://www.mineralresources.com.au/" target="_blank">Mineral Resources</a></td>
             </tr>
 
             <tr>
@@ -105,9 +105,34 @@
             </tr>
         </table>
 
-        <h5>Contact Form</h5>
+        <script>
+            function validateForm() {
+                let message = "";
 
-        <form action="/additem.php" method="post">
+                let fields = ["requestor", "email", "phone", "infotype", "request"];
+
+                for (let field of fields) {
+                    let value = document.getElementById(field).value.trim();
+
+                    if (value === "") {
+                        alert("❌ Please complete all fields.");
+                        return false;
+                    }
+                    else if (value.toLowerCase().includes("<script>")) {
+                        alert("❌ The text <script> is not allowed.");
+                        return false;
+                    }
+                }
+
+                alert("✅ All fields are valid!");
+                return true;
+            }
+        </script>
+
+
+        <h2>Contact Form</h2>
+
+        <form action="additem.php" method="post" onsubmit="return validateForm() ">
             <label for="requestor">Name:</label><br>
             <input type="text" id="requestor" name="requestor"><br>
             <label for="email">E-mail:</label><br>
